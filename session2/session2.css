@@ -1,0 +1,17 @@
+/* External CSS */
+
+
+/* Element selector */
+p {
+    color:aqua;
+}
+
+/* Defining a class */
+.class2 {
+    color: red;
+}
+
+/* defining an ID */
+#id1 {
+    color: yellow
+}

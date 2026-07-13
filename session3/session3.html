@@ -1,0 +1,96 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Top 3 Favourites Showcase</title>
+    <style>
+      .btn {
+        background-color: red;
+        animation-name: movingAnimation;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+      .btn:hover {
+        background-color:blue;
+      }
+      .btn:active {
+        background-color: green;
+      }
+      p::after {
+        content: "*";
+      }
+
+
+      @keyframes movingAnimation { 
+        0% {
+          transform: translate(0,0);
+          background-color: green;
+
+        }
+
+        25% {
+          transform: translate(100px, 0);
+                    background-color: yellow;
+        }
+        50% {
+          transform: translate(100px, 100px);
+                    background-color: red;
+        }
+        75% {
+          transform: translate(0, 100px);
+                    background-color: blue;
+        }
+
+        100% {
+          transform: translate(0,0)
+        }
+      }
+
+
+    </style>
+  </head>
+  <body>
+   <!-- previous assignment -->
+    <!-- <h1> My Top 3 Favourites</h1>
+    <p> Welcome to my showcase page! Here are three items I love</p>
+    <h2>  My Selections</h2>
+    <div style="display: flex; gap:5px; background-color:blue; height: 2000px; flex-direction: column; justify-content: center; align-items:center;"> 
+      <div>
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.vectorstock.com%2Fi%2F1000x1000%2F48%2F06%2Fimage-preview-icon-picture-placeholder-vector-31284806.jpg&f=1&nofb=1&ipt=1fe83a35205b26ca18981482a6389ff9d6bad02c185f48aaabdd143cba43a564" style="height:200px; width:200px;">
+        <h3>favourite 1</h3>
+      </div>
+      <div>
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.vectorstock.com%2Fi%2F1000x1000%2F48%2F06%2Fimage-preview-icon-picture-placeholder-vector-31284806.jpg&f=1&nofb=1&ipt=1fe83a35205b26ca18981482a6389ff9d6bad02c185f48aaabdd143cba43a564" style="height:200px; width:200px;">
+        <h3>favourite 2</h3>
+      </div>
+      <div>
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.vectorstock.com%2Fi%2F1000x1000%2F48%2F06%2Fimage-preview-icon-picture-placeholder-vector-31284806.jpg&f=1&nofb=1&ipt=1fe83a35205b26ca18981482a6389ff9d6bad02c185f48aaabdd143cba43a564" style="height:200px; width:200px;">
+        <h3>favourite </h3>
+      </div>
+    </div>
+    
+    <div style="background-color: red; width: 100px; height: 100px; position: sticky; top:200px;">
+      sticky
+    </div>
+    <div style="width: 5000px; height:5000px;">
+      
+    </div>
+    <div style="position: sticky; height: 100px; width: 100px; background-color: aqua;"></div>
+ -->
+
+  <!-- button with animations -->
+
+    <p>Click this button</p>
+    <p>new paragraph</p>
+    <button class="btn">
+      Hover
+    </button>
+
+    <div style="background-color: blueviolet; ">
+
+    </div>
+
+
+
+    <!-- <p>Created by [Your Name]</p> -->
+  </body>
+</html>
