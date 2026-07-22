@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Session</title>
+    </head>
+    <body>
+        <h1>Counter</h1>
+        <div style="display: flex; gap:20px;">
+            <button id="increment" style="padding: 0 20px;">+</button>
+            <p id="counter">0</p>
+            <button id="decrement" style="padding: 0 20px;">-</button>
+        </div>
+        <hr>
+        <br>
+        <br>
+
+        <input id="inputId">
+
+
+        <script>
+            var counter = document.getElementById("counter");
+            const incrementBtn = document.getElementById("increment");
+            const decrementBtn = document.getElementById("decrement");
+            const input = document.getElementById("inputId");
+
+            console.log(window.location)    
+
+            incrementBtn.addEventListener("click", () => {
+                var value = parseInt(counter.innerHTML);
+                value +=1;
+                counter.innerHTML = value;
+            });
+
+            decrementBtn.addEventListener("click", () => {
+                var value = parseInt(counter.innerHTML);
+                value -=1;
+                counter.innerHTML = value;
+                console.log(value);
+            });
+
+
+            function test()  {
+                console.log("hello");
+            }
+
+            const test2 = () => {
+                console.log("hello2");
+            }
+
+            () => {
+                console.log("hello3");
+            }
+
+
+            var obj = {
+                name: "Yahya",
+                age: 24,
+                email: "Yahya.adawy50@gmail.com"
+            }
+
+            console.log(obj.name)
+
+            // const name = obj.name;
+
+            const {name, age, email} = obj 
+
+            console.log(age);
+
+            const names = ["omar", "ahmed", "mohamed"]
+            const phones = ["01003410931", "010033212323", "0111000000230"]
+            for (var i = 0 ;i <3; i++) {
+                console.log(names[i])
+            } 
+
+            phones.map((x) => {
+                x += "hello"
+                console.log("map:", x);
+            })
+                    
+            </script>
+
+        <script src="javascript.js"></script>
+    </body>
+</html>
